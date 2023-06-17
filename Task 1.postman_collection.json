@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "8dbf5d95-63bd-4a75-892b-bca6975c0827",
+		"name": "Task 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27978967"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Login completed\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test.user@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/login",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Show product\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzc3YmRiM2ViNTM0YTVjNDVkODhhN2M0YzBkZWMzYjViZWVhN2IwOGZhN2Y3MDY1ZmYzZTQ0MTFhMDc0NzIyOGJjYzJhODY1NDg5NDA0ZDUiLCJpYXQiOjE2ODY5Mjk0MDcuMzI0NzcsIm5iZiI6MTY4NjkyOTQwNy4zMjQ3NzQsImV4cCI6MTcxODU1MTgwNy4zMjAyNjgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.uOYaaZJRplJpf9mctZQnjOawDgGwePdCLO3Y9JEnfy6xNKaHeJkEdXPgj130dM2BuLfw57af95ppFhLiuCDxS_kKnybD_B9P7uBuqsE7aiUkubPnD6EiFMPl1heUQJ2z-NHf5H3dBlq4dXIrsoW5O9xVttbmLu4lGwL63grEJO21xANIImd3n-WqYwCNdJ_PTFGl43D3_0So7-QQM5Nb3ZoCT3CMEYwgYZMyu2Yp8XI0hkA8rFwgE0142ElNlWUTP77LkIBbIasGep1pvdwydlAEuYJeW2T5tA4pFwrJU3HmFBXrStUkEvIq6L8Eu_uEMXTrffcjX5FA-0dZSXQ4JBLlCc8svf60548eSngo2QtbBAwAaiJv_LAGpsKEbIywC1Hs5ipcQfozvfofJGI9wUin9t1m1Yi7uY7KC5jvrmmfu8OAcZ85sGIrochPxPGUHWJ1OAk_1Ul0d2pWu-RHKSstA7z80UScYFVNk5S29LLl7fV8jHYkYUzPKIQogJAnn8EGzH-Th3Mhk3XU_zFgMvQ2hT_heiGmwRzlT20cDjx6IDGBpA-xOTXv5SJ6tLxrAXgBZpG2WWvO8YHlR3k3eNDXGaKlHsMJXCvdpd85KJbrHDndH1nArcRsFAxDPoF-3wbAxyearLCI5mCAVjwK7ZgXkwccn9EwkMBJZVmt66c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/product/view_product",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"product",
+						"view_product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show single product",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Show single product\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzc3YmRiM2ViNTM0YTVjNDVkODhhN2M0YzBkZWMzYjViZWVhN2IwOGZhN2Y3MDY1ZmYzZTQ0MTFhMDc0NzIyOGJjYzJhODY1NDg5NDA0ZDUiLCJpYXQiOjE2ODY5Mjk0MDcuMzI0NzcsIm5iZiI6MTY4NjkyOTQwNy4zMjQ3NzQsImV4cCI6MTcxODU1MTgwNy4zMjAyNjgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.uOYaaZJRplJpf9mctZQnjOawDgGwePdCLO3Y9JEnfy6xNKaHeJkEdXPgj130dM2BuLfw57af95ppFhLiuCDxS_kKnybD_B9P7uBuqsE7aiUkubPnD6EiFMPl1heUQJ2z-NHf5H3dBlq4dXIrsoW5O9xVttbmLu4lGwL63grEJO21xANIImd3n-WqYwCNdJ_PTFGl43D3_0So7-QQM5Nb3ZoCT3CMEYwgYZMyu2Yp8XI0hkA8rFwgE0142ElNlWUTP77LkIBbIasGep1pvdwydlAEuYJeW2T5tA4pFwrJU3HmFBXrStUkEvIq6L8Eu_uEMXTrffcjX5FA-0dZSXQ4JBLlCc8svf60548eSngo2QtbBAwAaiJv_LAGpsKEbIywC1Hs5ipcQfozvfofJGI9wUin9t1m1Yi7uY7KC5jvrmmfu8OAcZ85sGIrochPxPGUHWJ1OAk_1Ul0d2pWu-RHKSstA7z80UScYFVNk5S29LLl7fV8jHYkYUzPKIQogJAnn8EGzH-Th3Mhk3XU_zFgMvQ2hT_heiGmwRzlT20cDjx6IDGBpA-xOTXv5SJ6tLxrAXgBZpG2WWvO8YHlR3k3eNDXGaKlHsMJXCvdpd85KJbrHDndH1nArcRsFAxDPoF-3wbAxyearLCI5mCAVjwK7ZgXkwccn9EwkMBJZVmt66c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/product/view_single_product/15",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"product",
+						"view_single_product",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add To Cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Add to cart\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzc3YmRiM2ViNTM0YTVjNDVkODhhN2M0YzBkZWMzYjViZWVhN2IwOGZhN2Y3MDY1ZmYzZTQ0MTFhMDc0NzIyOGJjYzJhODY1NDg5NDA0ZDUiLCJpYXQiOjE2ODY5Mjk0MDcuMzI0NzcsIm5iZiI6MTY4NjkyOTQwNy4zMjQ3NzQsImV4cCI6MTcxODU1MTgwNy4zMjAyNjgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.uOYaaZJRplJpf9mctZQnjOawDgGwePdCLO3Y9JEnfy6xNKaHeJkEdXPgj130dM2BuLfw57af95ppFhLiuCDxS_kKnybD_B9P7uBuqsE7aiUkubPnD6EiFMPl1heUQJ2z-NHf5H3dBlq4dXIrsoW5O9xVttbmLu4lGwL63grEJO21xANIImd3n-WqYwCNdJ_PTFGl43D3_0So7-QQM5Nb3ZoCT3CMEYwgYZMyu2Yp8XI0hkA8rFwgE0142ElNlWUTP77LkIBbIasGep1pvdwydlAEuYJeW2T5tA4pFwrJU3HmFBXrStUkEvIq6L8Eu_uEMXTrffcjX5FA-0dZSXQ4JBLlCc8svf60548eSngo2QtbBAwAaiJv_LAGpsKEbIywC1Hs5ipcQfozvfofJGI9wUin9t1m1Yi7uY7KC5jvrmmfu8OAcZ85sGIrochPxPGUHWJ1OAk_1Ul0d2pWu-RHKSstA7z80UScYFVNk5S29LLl7fV8jHYkYUzPKIQogJAnn8EGzH-Th3Mhk3XU_zFgMvQ2hT_heiGmwRzlT20cDjx6IDGBpA-xOTXv5SJ6tLxrAXgBZpG2WWvO8YHlR3k3eNDXGaKlHsMJXCvdpd85KJbrHDndH1nArcRsFAxDPoF-3wbAxyearLCI5mCAVjwK7ZgXkwccn9EwkMBJZVmt66c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"product_id\": 123\r\n  \r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/cart/add_cart",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"cart",
+						"add_cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Show carted product\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzc3YmRiM2ViNTM0YTVjNDVkODhhN2M0YzBkZWMzYjViZWVhN2IwOGZhN2Y3MDY1ZmYzZTQ0MTFhMDc0NzIyOGJjYzJhODY1NDg5NDA0ZDUiLCJpYXQiOjE2ODY5Mjk0MDcuMzI0NzcsIm5iZiI6MTY4NjkyOTQwNy4zMjQ3NzQsImV4cCI6MTcxODU1MTgwNy4zMjAyNjgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.uOYaaZJRplJpf9mctZQnjOawDgGwePdCLO3Y9JEnfy6xNKaHeJkEdXPgj130dM2BuLfw57af95ppFhLiuCDxS_kKnybD_B9P7uBuqsE7aiUkubPnD6EiFMPl1heUQJ2z-NHf5H3dBlq4dXIrsoW5O9xVttbmLu4lGwL63grEJO21xANIImd3n-WqYwCNdJ_PTFGl43D3_0So7-QQM5Nb3ZoCT3CMEYwgYZMyu2Yp8XI0hkA8rFwgE0142ElNlWUTP77LkIBbIasGep1pvdwydlAEuYJeW2T5tA4pFwrJU3HmFBXrStUkEvIq6L8Eu_uEMXTrffcjX5FA-0dZSXQ4JBLlCc8svf60548eSngo2QtbBAwAaiJv_LAGpsKEbIywC1Hs5ipcQfozvfofJGI9wUin9t1m1Yi7uY7KC5jvrmmfu8OAcZ85sGIrochPxPGUHWJ1OAk_1Ul0d2pWu-RHKSstA7z80UScYFVNk5S29LLl7fV8jHYkYUzPKIQogJAnn8EGzH-Th3Mhk3XU_zFgMvQ2hT_heiGmwRzlT20cDjx6IDGBpA-xOTXv5SJ6tLxrAXgBZpG2WWvO8YHlR3k3eNDXGaKlHsMJXCvdpd85KJbrHDndH1nArcRsFAxDPoF-3wbAxyearLCI5mCAVjwK7ZgXkwccn9EwkMBJZVmt66c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://test.ludocorner.xyz/api/cart/view_cart",
+					"protocol": "https",
+					"host": [
+						"test",
+						"ludocorner",
+						"xyz"
+					],
+					"path": [
+						"api",
+						"cart",
+						"view_cart"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
