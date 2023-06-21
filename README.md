@@ -1,4 +1,4 @@
-# API-TESTING-Project-2
+# API-DOCUMENTATION
 
 ## Login
 - **URL**: https://test.ludocorner.xyz/api/login
