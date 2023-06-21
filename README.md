@@ -74,12 +74,7 @@ Replace `<collection_file_path>` with the path to your Postman collection file.
 
 The HTML report will be generated in the `newman` folder in your current directory.
 
-## Usage
-1. Export the collection from Postman and save it as a JSON file.
-2. Open a terminal or command prompt.
-3. Run the Newman command with the collection file and specify the HTML report format:
-4. Newman will execute the API tests and generate the HTML report.
-5. View the generated HTML report to see the test results and detailed information.
+### Newman Report Summary:
 
 
 
