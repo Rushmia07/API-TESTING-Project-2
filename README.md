@@ -76,5 +76,7 @@ The HTML report will be generated in the `newman` folder in your current directo
 
 ### Newman Report Summary:
 
+<img width="960" alt="2" src="https://github.com/Rushmia07/API-TESTING-Project-2/assets/134592496/90f90ee5-10a4-4250-93cf-e01fbe10ba6b">
+<img width="960" alt="Untitled" src="https://github.com/Rushmia07/API-TESTING-Project-2/assets/134592496/9464b948-1112-4974-9dee-f494b8a090e5">
 
 
