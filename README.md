@@ -50,4 +50,36 @@ Description: This endpoint adds a product to the user's cart. Provide the `produ
 - **Body Credentials**: NULL
 
 Description: This endpoint retrieves the items in the user's cart. Authenticate using the token and click on the cart icon to view the cart items.
+# API Testing Instructions
+
+## Technology Used
+- Postman: API testing tool used for sending requests and validating responses.
+- Newman: Command-line companion for Postman that allows for running collections and generating reports.
+
+## Prerequisites
+- JDK: Java Development Kit is required for running Postman.
+- Node.js: JavaScript runtime environment required for installing and running Newman.
+
+## Newman and HTML Report Installation Process
+
+### Step 1: Install Newman
+To install Newman, open a terminal or command prompt and run the following command:
+
+### Step 2: Install Newman HTML Report
+To install the Newman HTML report library, run the following command:
+
+### Step 3: Generate HTML Reports
+After running Newman, you can generate an HTML report using the following command:
+Replace `<collection_file_path>` with the path to your Postman collection file.
+
+The HTML report will be generated in the `newman` folder in your current directory.
+
+## Usage
+1. Export the collection from Postman and save it as a JSON file.
+2. Open a terminal or command prompt.
+3. Run the Newman command with the collection file and specify the HTML report format:
+4. Newman will execute the API tests and generate the HTML report.
+5. View the generated HTML report to see the test results and detailed information.
+
+
 
